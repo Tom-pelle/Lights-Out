@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("../img/wood.jpg") repeat;
+    background-size: 50px 50px;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50em;
+    margin: 0;
+}
+
+form {
+    background: #292929;
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 350px;
+    box-shadow: 0 0 20px #e6c000; 
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #e69d00; 
+}
+
+label {
+    font-size: 14px;
+    color: #f5f5f5;
+}
+
+input{
+    width: 100%; 
+    padding: 8px; 
+    margin: 10px 0; 
+    box-sizing: border-box; 
+    border: none;
+    border-bottom: 2px solid #444;
+    background: transparent;
+    color: #f5f5f5;
+    font-size: 14px;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #e69d00; 
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #e69d00;
+    color: #292929;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #8f6303;
+}
+
+button:disabled {
+    background: #444; 
+    color: #999; 
+    opacity: 0.6; 
+    box-shadow: none;
+}
+
+#loginForm{
+    display: inline-block;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #e69d00;
+    transition: color 0.3s ease-in-out;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #e69d00;
+}
+
+.error {
+    font-size: 13px;
+    font-weight: bold;
+    color: #bf441a; 
+    margin-top: 5px;
+    text-align: center;
+}
+
+

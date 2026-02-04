@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/documentazione.css">
+    <link rel="icon" type="image/x-icon" href="img/lighton.png">
+    <title>Lights Out - Manuale Utente</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lights Out - Manuale Utente</h1>
+
+        <h2>1. Introduzione</h2>
+        <p>Lights Out è un gioco puzzle in cui l'obiettivo è spegnere tutte le luci.
+        Per poter giocare è necessario avere un account registrato e autenticarsi.</p>
+
+        <h2>2. Registrazione</h2>
+        <p>Raggiungibile tramite il tasto <strong>"Registrati"</strong> nella pagina iniziale. Qui è necessario impostare uno username
+             e una password che rispettino le seguenti regole:</p>
+        <ul>
+            <li>Lo username deve essere univoco e le due password devono corrispondere.</li>
+            <li>Lo username e la password possono contenere solamente caratteri alfanumerici, devono essere composti dagli 8 ai 45 caratteri e 
+                non devono contenere spazi.</li>
+            <li>La password deve contenere almeno una lettera maiuscola, una minuscola e un numero.</li>
+        </ul>
+        <p>Se uno di questi requisiti non verrà soddisfatto apparirà un messaggio di errore specifico.</p>
+        <p>Effettuata la registrazione è necessario tornare alla pagina di login.</p>
+
+        <h2>3. Login</h2>
+        <p>
+            Basterà inserire le proprie credenziali usate durante la registrazione per accedere al gioco. 
+            Se lo username e/o la password immessi non sono possibili, non si attiverà il pulsante <strong>"Accedi"</strong> e verrà mostrato un messaggio di errore specifico.
+        </p>
+
+        <h2>4. Gioco e regole</h2>
+        <p>
+            Il gioco si svolge su una tabella 5x5 in cui ogni casella può essere accesa o spenta. Una nuova partita 
+            inizia con la generazione casuale delle luci sulla tabella. Lo scopo del giocatore è quello di raggiungere lo stato in cui tutte le luci sono spente.
+            Cliccando su una casella si inverte lo stato della luce su quella casella e su quelle adiacenti.
+            Una volta che tutte le luci sono spente la partita termina e viene registrata a fini di classifica.
+        </p>
+
+        <h2>5. Menu di gioco</h2>
+        <p>
+            Durante il gioco sono presenti le statistiche attuali della partita (utente, mosse, tempo, luci ancora accese) e le statistiche dei record del giocatore
+            (record mosse e record tempo). 
+        </p>
+        <p>
+            Sono presenti inoltre due pulsanti che permettono di effettuare il logout e vedere la classifica generale di tutti gli utenti. 
+            Entrambi salveranno la partita cosicchè l'utente possa riprendere da dove aveva lasciato. 
+        </p>
+        <p>
+            Quando un utente finisce una partita può scegliere di iniziarne una nuova. Quando un utente accede per la prima volta o dopo aver completato una partita,
+            ne verrà iniziata automicamente una nuova.
+        </p>
+        
+        <h2>6. Record e Classifiche</h2>
+        <p>
+            L'utente può provare ad essere il migliore di tutti concludendo la partita con il minor tempo e minor numero di mosse possibile.
+            Egli può confrontare le proprie partite con quelle degli altri nella pagina dedicata alla classifica. In questa è possibile:
+        </p>
+        <ul>
+            <li>Ordinare la classifica per numero di mosse crescente, tempo crescente e data di fine partita</li>
+            <li>Visualizzare il record corrente di tempo e vedere chi l'ha eseguito</li>
+            <li>Visualizzare il record corrente di mosse e vedere chi l'ha eseguito</li>
+            <li>Ritornare al gioco oppure effettuare il logut</li>
+        </ul>
+    </div>
+    <a href="pages/login.php">Torna al login</a>
+</body>
+</html>
