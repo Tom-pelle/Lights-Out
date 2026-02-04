@@ -1,30 +1,44 @@
-# Lights-Out
-Lights out is a web-based memory game developed in PHP featuring user authentication, game state management, and a ranking system.
+# Lights Out 
 
-## Game Description
-The game is based on a **memory-matching mechanic**: players are presented with a grid of hidden cards and must uncover pairs by remembering their positions.  
-The objective is to complete the game using the **fewest possible moves**, improving performance to achieve a higher position in the ranking.
+**Lights Out** is a web-based memory game built with PHP, designed to provide a complete interactive experience with user authentication and data persistence.
+Developed as an academic project to demonstrate core full-stack web development concepts.
 
-Each match can be saved and resumed, allowing users to continue playing at a later time.
+##  How to Play
+The game is based on the classic **Memory** mechanics:
+1. You are presented with a grid of hidden cards.
+2. The goal is to uncover all matching pairs by remembering their positions.
+3. Try to complete the level in the **fewest moves possible** to climb the leaderboard!
 
-## Features
-- User registration and login system
-- Interactive browser-based memory game
-- Game state saving and loading
-- Ranking system based on player performance
+##  Key Features
+- **User System**: Secure Registration and Login to access your personal profile.
+- **Game Save State**: You can pause a match and resume it later exactly where you left off.
+- **Global Leaderboard**: Compete with other users and see who completed the game with the fewest moves.
+- **Responsive Interface**: Polished design using CSS and smooth JavaScript interactions.
 
-## Technologies Used
-- PHP (server-side logic)
-- JavaScript (client-side game logic)
-- HTML & CSS (frontend interface)
-- Database for user and game data persistence
+##  Project Structure
+The code is organized modularly:
+- **`Lights Out/`**: Application root.
+  - `index.php`: Main entry point (landing/login page).
+  - `pages/`: Internal pages (signup, game dashboard, leaderboard).
+  - `phputils/`: PHP libraries for database connection and session management.
+  - `css/` & `img/`: Frontend static assets.
+  - `documentazione.html`: Detailed technical documentation.
 
-## Project Structure
-- `index.php` – application entry point  
-- `pages/` – main application pages (login, signup, game, ranking)  
-- `phputils/` – database configuration and utilities  
-- `css/`, `img/` – frontend assets  
-- `documentazione.html` – project documentation  
+##  Installation & Setup
 
-## Purpose
-The project was developed as part of an academic assignment to apply core concepts of **web development**, including authentication, game state management, and database integration.
+### Prerequisites
+- Web Server (Apache/Nginx)
+- PHP 7.4 or higher
+- MySQL Database
+
+### Local Setup
+1. Clone the repository into your web server's root folder (e.g., `htdocs` for XAMPP or `/var/www/html`):
+   
+   git clone https://github.com/Tom-pelle/Lights-Out.git
+
+2. Import the database schema (refer to `documentazione.html` for the table structure).
+3. Configure the database connection by editing **`Lights Out/phputils/dbparams.php`** with your local credentials.
+4. Start your server and navigate to `http://localhost/Lights-Out`.
+
+## 👥 Authors
+- **Tommaso Pellegrini** - [Tom-pelle](https://github.com/Tom-pelle)
